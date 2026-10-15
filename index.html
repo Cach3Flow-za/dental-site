@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cach3Flow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar" aria-label="Main navigation">
+        <div class="brand" aria-label="Cach3Flow logo">
+          <div class="brand-mark">
+            <img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/e006a.svg" alt="Cach3Flow logo" />
+          </div>
+        </div>
+        <button class="menu-pill" type="button" aria-controls="site-menu" aria-haspopup="dialog">Menu</button>
+      </header>
+
+      <dialog class="menu-drawer" id="site-menu" aria-labelledby="menu-title">
+        <div class="menu-drawer__header">
+          <h2 id="menu-title">Menu</h2>
+          <button class="menu-drawer__close" type="button" data-menu-close autofocus>X</button>
+        </div>
+        <nav class="menu-drawer__links" aria-label="Site navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="booking.html">Book a Visit</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </dialog>
+
+      <main class="content">
+        <section class="hero" aria-label="Hero section">
+          <p class="hero__eyebrow">Brightening smiles,<br />one brush at a time.</p>
+
+          <div class="hero__row hero__row--left">
+            <h1 class="hero__title">Crafting</h1>
+            <div class="hero__image">
+              <img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/cdd9e.png" alt="Bright toothbrush" />
+            </div>
+          </div>
+
+          <div class="hero__row hero__row--right">
+            <div class="hero__image">
+              <img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/265bb.png" alt="Smile product display" />
+            </div>
+            <h1 class="hero__title">Smiles</h1>
+          </div>
+
+          <div class="hero__copy">
+            <p>
+              At ... , we blend artistry and science, offering premium dental care products that make your daily routine a masterpiece of oral health and beauty.
+            </p>
+          </div>
+        </section>
+
+        <section class="feature-showcase" aria-label="About section">
+          <div class="feature-showcase__image">
+            <img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/33f6e.png" alt="Smiling woman" />
+          </div>
+
+          <div class="feature-showcase__note">We simplify dental care with expertly crafted solutions.</div>
+
+          <div class="feature-showcase__card">
+            <div class="feature-showcase__label">About Us</div>
+            <h2 class="feature-showcase__headline">Dental<br />Excellence<br />Simplified</h2>
+            <a class="feature-showcase__cta" href="https://www.google.com/maps/search/?api=1&amp;query=Zoo+Lake%2C+Johannesburg%2C+South+Africa" target="_blank" rel="noopener noreferrer">
+              <span>Find Us</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="offerings" id="offerings" aria-label="Offerings">
+          <h2 class="section-title">Our Offerings</h2>
+
+          <div class="offerings__grid">
+            <article class="offering-card offering-card--blue">
+              <h3 class="offering-card__title">Customized Care Plans</h3>
+              <a class="offering-card__link" href="customized-care-plans.html">
+                <span>View More</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </article>
+
+            <article class="offering-card offering-card--dark">
+              <h3 class="offering-card__title">Smile Enhancement</h3>
+              <a class="offering-card__link" href="smile-enhancement.html">
+                <span>View More</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </article>
+
+            <article class="offering-card offering-card--green">
+              <h3 class="offering-card__title">Oral Wellness Check</h3>
+              <a class="offering-card__link" href="oral-wellness-check.html">
+                <span>View More</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="booking" id="booking" aria-label="Book visit">
+          <h2 class="booking__title">Schedule Your Visit</h2>
+
+          <form class="booking__form" action="#" method="get">
+            <label class="field" aria-label="Your name">
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+
+            <label class="field" aria-label="Phone number">
+              <input type="tel" name="phone" placeholder="Phone number" />
+            </label>
+
+            <div class="field field--date picker-control" data-picker="date">
+              <button class="picker-trigger" type="button" aria-haspopup="dialog" aria-expanded="false">
+                <span data-picker-label>Select date</span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6.5h12M5 2v2M11 2v2M3 4h10a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <input type="hidden" name="date" data-picker-input />
+              <div class="picker-popover calendar-picker" data-picker-panel role="dialog" aria-label="Choose appointment date" hidden>
+                <div class="picker-popover__header"><button class="picker-nav" type="button" data-calendar-prev aria-label="Previous month">‹</button><h3 data-calendar-heading></h3><button class="picker-nav" type="button" data-calendar-next aria-label="Next month">›</button></div>
+                <div class="calendar-weekdays" aria-hidden="true"><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span></div>
+                <div class="calendar-days" data-calendar-days></div>
+              </div>
+            </div>
+
+            <div class="field field--time picker-control" data-picker="time">
+              <button class="picker-trigger" type="button" aria-haspopup="dialog" aria-expanded="false">
+                <span data-picker-label>Select time</span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 4.5V8l2.3 1.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <input type="hidden" name="time" data-picker-input />
+              <div class="picker-popover clock-picker" data-picker-panel role="dialog" aria-label="Choose appointment time" hidden>
+                <div class="picker-popover__header clock-picker__header"><h3 data-clock-heading>Choose hour</h3><div class="clock-period" aria-label="AM or PM"><button type="button" data-period="AM" aria-pressed="true">AM</button><button type="button" data-period="PM" aria-pressed="false">PM</button></div></div>
+                <div class="clock-stage" data-clock-stage>Select an hour</div>
+                <div class="clock-face" data-clock-face><span class="clock-hand" data-clock-hand></span><span class="clock-center"></span><div class="clock-values" data-clock-values></div></div>
+                <div class="clock-picker__actions"><button class="clock-back" type="button" data-clock-back hidden>Change hour</button><button class="clock-confirm" type="button" data-clock-confirm disabled>Set time</button></div>
+              </div>
+            </div>
+
+            <button type="submit" class="booking__button">Book Now</button>
+          </form>
+        </section>
+
+        <section class="stories" aria-label="Testimonials">
+          <h2 class="section-title">Cach3Flow Stories</h2>
+
+          <div class="stories__cards">
+            <article class="story-card">
+              <div>
+                <p class="story-card__quote">I’ve been using Cach3Flow toothpaste for months now, and the results are amazing. My teeth feel stronger, and my visits to the dentist have been a breeze.</p>
+                <div class="stars" aria-label="5 stars">
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                </div>
+              </div>
+              <div class="story-card__author">
+                <div class="avatar"><img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/3a90d.png" alt="Mark D." /></div>
+                <span>Mark D.</span>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div>
+                <p class="story-card__quote">Their customized care plans made me feel like my dental health truly mattered. Thank you, Cach3Flow, for making my smile shine!</p>
+                <div class="stars" aria-label="5 stars">
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                </div>
+              </div>
+              <div class="story-card__author">
+                <div class="avatar"><img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/39755.png" alt="Emily S." /></div>
+                <span>Emily S.</span>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div>
+                <p class="story-card__quote">The oral wellness check was thorough and informative. Cach3Flow’s holistic approach to dental care is refreshing and effective.</p>
+                <div class="stars" aria-label="5 stars">
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                </div>
+              </div>
+              <div class="story-card__author">
+                <div class="avatar"><img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/021eb.png" alt="David L." /></div>
+                <span>David L.</span>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div>
+                <p class="story-card__quote">I’ve finally found a dental brand that cares about both my oral health and the aesthetics of my smile. Cach3Flow is my go-to choice!</p>
+                <div class="stars" aria-label="5 stars">
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                </div>
+              </div>
+              <div class="story-card__author">
+                <div class="avatar"><img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/ddaa0.png" alt="Lisa P" /></div>
+                <span>Lisa P</span>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div>
+                <p class="story-card__quote">Cach3Flow has transformed my dental routine. The toothbrush is a work of art, and my smile has never been brighter!</p>
+                <div class="stars" aria-label="5 stars">
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.7 4.6 1.1 6.6-6-3.2-6 3.2 1.1-6.6L2.5 9.4l6.6-.9L12 2.5Z" fill="currentColor"/></svg>
+                </div>
+              </div>
+              <div class="story-card__author">
+                <div class="avatar" aria-label="Sarah M."></div>
+                <span>Sarah M.</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="stories__controls" aria-label="Carousel controls">
+            <button class="pager" type="button" aria-label="Previous slide">
+              <svg viewBox="0 0 68 68" aria-hidden="true">
+                <path d="M42 18 24 34l18 16" fill="none" stroke="#12161b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="pager pager--dark" type="button" aria-label="Next slide">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <footer class="footer" id="footer" aria-label="Footer">
+          <div class="footer__grid">
+            <div class="footer__brand">Cach3Flow</div>
+
+            <div>
+              <h3 class="footer__heading">Our Timings</h3>
+              <ul class="footer__list">
+                <li>Monday: 8:00am - 4:00 pm</li>
+                <li>Tuesday: 8:00am - 4:00 pm</li>
+                <li>Wednesday: 8:00am - 4:00 pm</li>
+                <li>Thursday: 8:00am - 4:00 pm</li>
+                <li>Friday: 8:00am - 12:00 pm</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__heading">Our Location</h3>
+              <ul class="footer__list">
+                <li>Cach3Flow Headquarters</li>
+                <li>123 Smile Street</li>
+                <li>Dentalville, DENT 12345</li>
+                <li>Kashmir</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__heading">Links</h3>
+              <ul class="footer__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book a Visit</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__meta">
+            <span>© 2026 Cahc3Flow. All rights reserved.</span>
+            <div class="footer__socials">
+              <span>Facebook</span>
+              <span>Instagram</span>
+              <span>TikTok</span>
+              <span>Youtube</span>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="menu.js" defer></script>
+    <script src="date-time-picker.js" defer></script>
+  </body>
+</html>

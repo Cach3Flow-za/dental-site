@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Visit | Cach3Flow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Cach3Flow home">
+          <span class="brand-mark"><img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/e006a.svg" alt="Cach3Flow logo" /></span>
+        </a>
+        <button class="menu-pill" type="button" aria-controls="site-menu" aria-haspopup="dialog">Menu</button>
+      </header>
+
+      <dialog class="menu-drawer" id="site-menu" aria-labelledby="menu-title">
+        <div class="menu-drawer__header">
+          <h2 id="menu-title">Menu</h2>
+          <button class="menu-drawer__close" type="button" data-menu-close autofocus aria-label="Close menu">X</button>
+        </div>
+        <nav class="menu-drawer__links" aria-label="Site navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="booking.html" aria-current="page">Book a Visit</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </dialog>
+
+      <main class="content">
+        <section class="subpage" aria-labelledby="booking-title">
+          <header class="subpage__hero">
+            <p class="subpage__eyebrow">Your next step</p>
+            <h1 id="booking-title">Let’s get you smiling.</h1>
+            <p>Choose a time that works for you. Our team will follow up to confirm your appointment.</p>
+          </header>
+
+          <section class="visit-layout" aria-label="Appointment request">
+            <aside class="visit-aside">
+              <p class="subpage__eyebrow">A visit that feels easy</p>
+              <h2>We’ll take it from here.</h2>
+              <p>Share a few details and your preferred appointment time. We’ll be in touch to confirm availability.</p>
+              <div class="visit-aside__image">
+                <img src="https://www.figma.com/api/mcp/asset/7d34698a-f8dd-42e3-bfbe-138d3a81b7dd/33f6e.png" alt="Smiling patient" />
+              </div>
+            </aside>
+
+            <form class="visit-form" action="#" method="get">
+              <h2>Request an appointment</h2>
+              <div class="visit-form__grid">
+                <label class="visit-field"><span>Your name</span><input type="text" name="name" autocomplete="name" placeholder="Full name" required /></label>
+                <label class="visit-field"><span>Email address</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" required /></label>
+                <label class="visit-field"><span>Phone number</span><input type="tel" name="phone" autocomplete="tel" placeholder="Your phone number" required /></label>
+                <label class="visit-field"><span>Service</span><select name="service" required><option value="" selected disabled>Select a service</option><option>Customized Care Plan</option><option>Smile Enhancement</option><option>Oral Wellness Check</option></select></label>
+                <div class="visit-field picker-control picker-control--form" data-picker="date" data-picker-required>
+                  <span>Preferred date</span>
+                  <button class="picker-trigger visit-field__trigger" type="button" aria-haspopup="dialog" aria-expanded="false"><span data-picker-label>Select date</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6.5h12M5 2v2M11 2v2M3 4h10a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                  <input type="hidden" name="date" data-picker-input />
+                  <div class="picker-popover calendar-picker" data-picker-panel role="dialog" aria-label="Choose appointment date" hidden><div class="picker-popover__header"><button class="picker-nav" type="button" data-calendar-prev aria-label="Previous month">‹</button><h3 data-calendar-heading></h3><button class="picker-nav" type="button" data-calendar-next aria-label="Next month">›</button></div><div class="calendar-weekdays" aria-hidden="true"><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span></div><div class="calendar-days" data-calendar-days></div></div>
+                  <span class="picker-error" data-picker-error hidden>Choose a date to continue.</span>
+                </div>
+                <div class="visit-field picker-control picker-control--form" data-picker="time" data-picker-required>
+                  <span>Preferred time</span>
+                  <button class="picker-trigger visit-field__trigger" type="button" aria-haspopup="dialog" aria-expanded="false"><span data-picker-label>Select time</span><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 4.5V8l2.3 1.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                  <input type="hidden" name="time" data-picker-input />
+                  <div class="picker-popover clock-picker" data-picker-panel role="dialog" aria-label="Choose appointment time" hidden><div class="picker-popover__header clock-picker__header"><h3 data-clock-heading>Choose hour</h3><div class="clock-period" aria-label="AM or PM"><button type="button" data-period="AM" aria-pressed="true">AM</button><button type="button" data-period="PM" aria-pressed="false">PM</button></div></div><div class="clock-stage" data-clock-stage>Select an hour</div><div class="clock-face" data-clock-face><span class="clock-hand" data-clock-hand></span><span class="clock-center"></span><div class="clock-values" data-clock-values></div></div><div class="clock-picker__actions"><button class="clock-back" type="button" data-clock-back hidden>Change hour</button><button class="clock-confirm" type="button" data-clock-confirm disabled>Set time</button></div></div>
+                  <span class="picker-error" data-picker-error hidden>Choose a time to continue.</span>
+                </div>
+                <label class="visit-field visit-field--wide"><span>Anything we should know?</span><textarea name="message" rows="3" placeholder="Optional note for our team"></textarea></label>
+              </div>
+              <button class="visit-form__submit" type="submit">Request a Visit <span aria-hidden="true">↗</span></button>
+            </form>
+          </section>
+        </section>
+
+        <footer class="footer" id="footer" aria-label="Footer">
+          <div class="footer__grid">
+            <div class="footer__brand">Cach3Flow</div>
+            <div><h3 class="footer__heading">Our Timings</h3><ul class="footer__list"><li>Monday: 8:00am - 4:00 pm</li><li>Tuesday: 8:00am - 4:00 pm</li><li>Wednesday: 8:00am - 4:00 pm</li><li>Thursday: 8:00am - 4:00 pm</li><li>Friday: 8:00am - 12:00 pm</li></ul></div>
+            <div><h3 class="footer__heading">Our Location</h3><ul class="footer__list"><li>Cach3Flow Headquarters</li><li>123 Smile Street</li><li>Dentalville, DENT 12345</li><li>Kashmir</li></ul></div>
+            <div><h3 class="footer__heading">Links</h3><ul class="footer__list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="booking.html">Book a Visit</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+          </div>
+          <div class="footer__meta"><span>© 2026 Cach3Flow. All rights reserved.</span><div class="footer__socials"><span>Facebook</span><span>Instagram</span><span>TikTok</span><span>YouTube</span></div></div>
+        </footer>
+      </main>
+    </div>
+    <script src="menu.js" defer></script>
+    <script src="date-time-picker.js" defer></script>
+  </body>
+</html>
